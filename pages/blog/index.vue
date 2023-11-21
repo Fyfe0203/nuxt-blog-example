@@ -2,7 +2,7 @@
  * @Author: fyfe0203 freeser@live.cn
  * @Date: 2022-06-11 10:26:17
  * @LastEditors: fyfe0203 freeser@live.cn
- * @LastEditTime: 2023-11-21 18:56:59
+ * @LastEditTime: 2023-11-21 19:03:42
  * @Description:
  * @FilePath: /nuxt-blog-example/pages/blog/index.vue
 -->
@@ -16,8 +16,6 @@ const qc = await queryContent('blog')
 	.where({ author })
 	.sort({ _file: -1, $numeric: true })
 	.find();
-
-console.log(qc);
 </script>
 
 <template>

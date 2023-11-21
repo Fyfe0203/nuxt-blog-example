@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2022-06-11 10:26:17
  * @LastEditors: fyfe0203 freeser@live.cn
- * @LastEditTime: 2023-11-21 19:00:35
+ * @LastEditTime: 2023-11-21 19:06:56
  * @Description:
  * @FilePath: /nuxt-blog-example/nuxt.config.ts
  */
@@ -21,6 +21,11 @@ export default defineNuxtConfig({
 		prerender: {
 			routes: ['/blog/foo-bar', '/blog/hello-world'],
 		},
+	},
+
+	components: {
+		global: true,
+		dirs: ['~/components'],
 	},
 
 	content: {
