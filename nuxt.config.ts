@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2022-06-11 10:26:17
  * @LastEditors: fyfe0203 freeser@live.cn
- * @LastEditTime: 2023-11-21 19:06:56
+ * @LastEditTime: 2023-11-22 10:00:00
  * @Description:
  * @FilePath: /nuxt-blog-example/nuxt.config.ts
  */
@@ -10,6 +10,7 @@
 export default defineNuxtConfig({
 	ssr: true,
 	modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+	css: ['@/assets/css/prose.scss'],
 	tailwindcss: {
 		cssPath: '~/assets/css/tailwind.css',
 		configPath: 'tailwind.config',
