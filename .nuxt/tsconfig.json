@@ -53,6 +53,12 @@
       "public": [
         "../public"
       ],
+      "utils": [
+        "../utils"
+      ],
+      "utils/*": [
+        "../utils/*"
+      ],
       "#app": [
         "../node_modules/nuxt/dist/app"
       ],
@@ -94,6 +100,7 @@
     "../node_modules/@nuxtjs/mdc/runtime",
     "../node_modules/@nuxt/content/runtime",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/nuxt-icons/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -104,6 +111,7 @@
     "../node_modules/@nuxtjs/mdc/runtime/server",
     "../node_modules/@nuxt/content/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/nuxt-icons/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

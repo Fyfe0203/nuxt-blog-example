@@ -52,7 +52,7 @@ const r=Object.create(null),t=e=>globalThis.process?.env||globalThis._importMeta
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "dev"
+    "buildId": "test"
   }
 };
 
@@ -282,7 +282,7 @@ const _inlineRuntimeConfig = {
     "documentDriven": false,
     "respectPathCase": false,
     "experimental": {
-      "clientDB": true,
+      "clientDB": false,
       "stripQueryParameters": false,
       "advanceQuery": false,
       "search": ""

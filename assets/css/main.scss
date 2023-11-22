@@ -1,0 +1,99 @@
+img:not([src]),
+img[src=''] {
+	opacity: 0;
+}
+/*
+来源：https://mp.weixin.qq.com/s/kg252ccR1-7vCFJHnRr2Mg
+1、根据粗细程度自动选择对应字体包，可以通过 @font-face 中的 font-weight 属性来设置字体的宽度，注意，这里我们把字体名字都设为相同的
+2、如何根据不同语言自动选择字体包，使用 unicode-range 设置字符 unicode 范围，从而自定义字体包。如：unicode-range: U+0020-007E, U+4E00-9FFF;
+*/
+// @font-face {
+//     font-family: PuHuiTi;
+//     src: url('../font/Alibaba-PuHuiTi-Regular.woff2');
+//     font-weight: 400;
+// }
+// @font-face {
+//     font-family: PuHuiTi;
+//     src: url('../font/Alibaba-PuHuiTi-Medium.woff2');
+//     font-weight: 500;
+// }
+// @font-face {
+//     font-family: PuHuiTi;
+//     src: url('../font/Alibaba-PuHuiTi-Bold.woff2');
+//     font-weight: 700;
+// }
+
+input[type='number'] {
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+
+	appearance: textfield;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-transition-delay: 999999s;
+	-webkit-transition: color 999999s ease-out,
+		background-color 999999s ease-out;
+}
+
+::-webkit-scrollbar {
+	/* 滚动条整体样式 */
+	width: 3px; /* 高宽分别对应横竖滚动条的尺寸 */
+	height: 3px;
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+	/* 滚动条里面小方块 */
+	background: #ccc;
+	&:hover {
+		background: #666;
+	}
+}
+::-webkit-scrollbar-track {
+	/* 滚动条里面轨道 */
+	background: transparent;
+}
+
+html {
+	.translate-center {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.translate-center-x {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.translate-center-y {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.flex-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.flex-center-x {
+		display: flex;
+		align-items: center;
+	}
+	.flex-center-y {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nuxt-icon svg {
+		margin-bottom: 0;
+	}
+}
